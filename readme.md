@@ -62,9 +62,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
--uitwerken voor de 1e werkgroep - eind van de eerste week-
-
-
+![Breakdown schets Franshals Museum Homepage](https://github.com/norakramer1/FED_blokWeb/blob/main/images/BREAKDOWN_FHMuseum.jpg
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
