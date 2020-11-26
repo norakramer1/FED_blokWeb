@@ -1,14 +1,19 @@
 # Procesverslag
-**Auteur:** Nora Kramer
+**Auteur:** -Nora Kramer-
 
 Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet). Nb. de standaardstructuur en de spartaanse opmaak zijn helemaal prima. Het gaat om de inhoud van je procesverslag. Besteedt de tijd voor pracht en praal aan je website.
 
 
 
 ## Bronnenlijst
-1. -bron 1-
-2. -bron 2-
-3. -...-
+1. - https://www.w3schools.com/html/tryit.asp?filename=tryhtml_form_submit
+2. - https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+3. - https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
+4. - https://css-tricks.com/almanac/selectors/n/nth-of-type/
+5. - https://stackoverflow.com/questions/52701579/uneven-border-width-near-corners-using-css
+
+
+
 
 
 
@@ -38,21 +43,25 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ### Stand van zaken
 
--dit ging goed & dit was lastig-
+Wat goed ging tijdens de eerste paar weken was het begrijpen van de opdrachten. Ik ben aardig bij gebleven. Wat niet goed ging was het positioneren van elementen in mijn website. Hierdoor kon ik maar 1 pagina opleveren die niet goed gepositioneerd is. Ik had hier eerder aan moeten beginnen zodat ik vragen kon stellen.
 
 **Screenshot(s):**
+![screenshot 1](images/screenshot1week3.jpg)
+![screenshot 2](images/screenshot2week3.jpg)
+![screenshot 3](images/screenshot2week3.jpg)
 
--screenshot(s) van hoe ver je bent met korte uitleg-
+
+
 
 ### Agenda voor meeting
 
 -samen met je groepje opstellen-
 
-| student 1      | student 2          | student 3    | student 4        |
+| Lotte Koblens  | Tamar Langeburg    | Zara Schriever | Nora Kramer    |
 | ---            | ---                | ---          | ---              |
-| dit bespreken  | en dit             | en ik dit    | en dan ik dat    |
-| an dat ook nog | dit als er tijd is | nog een punt | dit wil ik zeker |
-| ...            | ...                | ...          | ...              |
+| hamburger menu |                    | Image slider | Flexbox positioneren|
+|                |                    |              | kaarten maken css|
+|                |                    |              |                  |
 
 ### Verslag van meeting
 
@@ -62,21 +71,22 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Breakdownschets (week 1)
 
-![Breakdown schets Franshals Museum Homepage](https://github.com/norakramer1/FED_blokWeb/blob/main/images/BREAKDOWN_FHMuseum.jpg
+![Breakdownschets](images/BREAKDOWN_FHMuseum.jpg)
+
 
 ## Intake (week 1)
 -uitwerken voor de kick-off werkgroep - begin van de eerste week-
 
-**Je startniveau:** -kies uit zwart, rood óf blauw-
+**Je startniveau:** - rood -
 
-**Je focus:** -kies uit responsive óf surface plane-
+**Je focus:** - Surface Plane -
 
-**Je opdracht:** -link naar de website die je gaat namaken óf de naam van je eigen ontwerp-
+**Je opdracht:** - https://www.franshalsmuseum.nl/nl/ -
 
 **Screenshot(s) van de eerste pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+![pagina 1](images/franshalsmuseum1-pagina.png)
 
 **Screenshot(s) van de tweede pagina (small screen):**
 
-<img src="images/dummy-plaatje.svg" width="375px" alt="omschrijving van de pagina">
+![pagina 2](images/franshalsmuseum2-pagina.png)
