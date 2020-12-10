@@ -11,6 +11,10 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 3. - https://developer.mozilla.org/en-US/docs/Web/CSS/object-fit
 4. - https://css-tricks.com/almanac/selectors/n/nth-of-type/
 5. - https://stackoverflow.com/questions/52701579/uneven-border-width-near-corners-using-css
+6. - https://stackoverflow.com/questions/50763880/using-flexbox-on-ul-next-to-eachother
+7. - https://stackoverflow.com/questions/40266825/how-to-override-box-sizing-border-box-on-a-specific-section
+
+
 
 
 
@@ -35,8 +39,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 2 (week 5)
 
--same as voortgang 1-
+Wat goed ging in de afgelopen weken was dat ik met de tips van de studentassistent een aantal van de problemen die ik had heb opgelost. Wat niet goed ging is het bijhouden van de website. Ik ben nog niet zo ver als ik wilde zijn en heb nog veel te doen. Ook loop ik aan tegen andere problemen met positioneren van buttons en andere elementen.
 
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+| Lotte Koblens  | Tamar Langeburg    | Zara Schriever | Nora Kramer    |
+| ---            | ---                | ---          | ---              |
+| margin         | animatie           |stylen 2e pagina| classes voor styling pagina 2|
+|knoppen positioneren|  nav balk     |               | positioneren knopppen|
+|                |positioneren knoppen|              |                  |
 
 
 ## Voortgang 1 (week 3)
@@ -65,7 +78,10 @@ Wat goed ging tijdens de eerste paar weken was het begrijpen van de opdrachten. 
 
 ### Verslag van meeting
 
--na afloop snel uitkomsten vastleggen-
+-Feedback en tips:
+1. als je de video niet kan vinden, maak een neppe
+2. Negatieve margins van de tekst in de carousel bovenin
+3. Border radius voor ronde knop in de nav
 
 
 
