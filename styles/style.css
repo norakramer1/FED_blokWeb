@@ -76,10 +76,12 @@ ul {
   overflow: scroll;
   display: flex;
   flex-direction: row;
-  margin: 0;
+
 }
 
 ul li p{
+width: 100%;
+
 
 }
 
@@ -94,8 +96,8 @@ a {
 
   /* POSITIONERING BUTTONS */
   position: relative;
-  right: 20%;
   margin: 0;
+left: 20%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 3em;
