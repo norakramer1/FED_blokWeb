@@ -33,7 +33,17 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Voortgang 3 (week 6)
 
--same as voortgang 1-
+Wat goed ging deze week is dat ik de positionering van de carousel voor elkaar heb maar wat daardoor niet goed ging was de positionering van de carousel daaronder en de buttons en articles.
+
+### Agenda voor meeting
+
+-samen met je groepje opstellen-
+
+| Lotte Koblens  | Tamar Langeburg  | Zara Schriever | Nora Kramer      |
+| ---            | ---                | ---          | ---              |
+|                | animatie           | image slider |  positionering   |
+|                |  nav balk          | flexbox      | microinteractie  |
+|                |                    |              |                  |
 
 
 

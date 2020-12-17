@@ -72,6 +72,7 @@ p {
 }
 
 ul {
+  padding-left: 0;
   list-style: none;
   overflow: scroll;
   display: flex;
@@ -79,10 +80,16 @@ ul {
 
 }
 
+ul li {
+  padding:0;
+min-width: 100%;
+padding-right:5%;
+
+
+}
+
 ul li p{
-width: 100%;
-
-
+  margin-left: 0;
 }
 
 a {
@@ -97,7 +104,7 @@ a {
   /* POSITIONERING BUTTONS */
   position: relative;
   margin: 0;
-left: 20%;
+  left: 20%;
   padding-top: 0.5em;
   padding-bottom: 0.5em;
   padding-left: 3em;
@@ -109,17 +116,19 @@ section {
   margin-top: 17%;
 }
 
+ section {
+  margin: 0;
+}
+
 section a {
   background-color: #FCE373;
   text-decoration: none;
   font-family: 'baron_neuebold', helvetica, Sans-Serif;
   font-size: 110%;
   color: #231f20;
+  margin-top: 3%;
 }
 
-section {
-  margin: 0;
-}
 
 section figure figcaption {
   font-family: 'baron_neuebold', helvetica, Sans-Serif;
@@ -138,6 +147,10 @@ section ul {
   display: flex;
   padding-left: 0%;
   list-style: none;
+}
+
+section ul li figure{
+  max-width:50%;
 }
 
 ul li figure img {
@@ -161,8 +174,12 @@ section.video p {
 
 /* SECTION ORANJE */
 /* DIV VAN STACKOVERFLOW:https://stackoverflow.com/questions/50763880/using-flexbox-on-ul-next-to-eachother */
-div {
-  display: flex;
+article.hof {
+  display: block;
+}
+
+article.hal {
+  display: block;
 }
 
 section.oranje ul {
@@ -187,7 +204,7 @@ section.oranje ul li {
 }
 
 section.oranje ul li img {
-  width: 80%;
+  width: 50%;
   border: solid 7px #9ad18b;
   /*green*/
 }
@@ -259,6 +276,7 @@ section.paars a {
 }
 
 /* Museum hightlights */
+
 section.paars a {
   font-size: 90%;
   display: flex;
@@ -336,6 +354,11 @@ footer h2 {
 
 /* MOOI PAGINA */
 
+body.paars header{
+  margin:0%;
+  background-color:#f89f4d;
+  padding-bottom:25%;
+}
 body.paars{
 background-color: #a385bd;
 
