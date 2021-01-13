@@ -23,7 +23,7 @@ Markdown cheat cheet: [Hulp bij het schrijven van Markdown](https://github.com/a
 
 ## Eindgesprek (week 7/8)
 
--dit ging goed & dit was lastig-
+Wat goed ging is dat ik de laatste weken veel problemen heb uitgewerkt, zoals de javascript en de articles naast elkaar krijgen, wat niet goed ging is het afmaken van de site, ik heb er niet lang genoeg aan gewerkt in de vakantie dus het is nog niet af.
 
 **Screenshot(s):**
 

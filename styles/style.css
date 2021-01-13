@@ -1,22 +1,21 @@
 /* CSS Document */
- *, *::after, *::before {
-  box-sizing:border-box;
+*, *::after, *::before {
+  box-sizing: border-box;
 }
 
-*{
+* {
   margin-left: 5%;
   margin-right: 5%;
 }
 
-
 @font-face {
-    font-family: 'baron_neuebold';
-    src: url('webfontkit-baron-neue/baron_neue_bold-webfont.woff2') format('woff2'),
-         url('webfontkit-baron-neue/baron_neue_bold-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
+  font-family: 'baron_neuebold';
+  src: url('webfontkit-baron-neue/baron_neue_bold-webfont.woff2') format('woff2'),
+    url('webfontkit-baron-neue/baron_neue_bold-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
 html, body {
   max-width: 100%;
   overflow-x: hidden;
@@ -67,29 +66,39 @@ p {
   font-family: helvetica, Sans-Serif;
   text-align: center;
   color: #231f20;
-    width: 100%;
-    /*black*/
+  width: 100%;
 }
 
+/* CAROUSEL TEKST */
 ul {
   padding-left: 0;
   list-style: none;
   overflow: scroll;
   display: flex;
   flex-direction: row;
-
 }
 
 ul li {
-  padding:0;
-min-width: 100%;
-padding-right:5%;
-
-
+  padding: 0;
+  min-width: 100%;
+  padding-right: 5%;
 }
 
-ul li p{
+ul li p {
   margin-left: 0;
+}
+
+/* CAROUSEL PLAATJES */
+section ul {
+  overflow: scroll;
+}
+
+section ul li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  min-width: 60%;
+  margin: 0%;
 }
 
 a {
@@ -99,16 +108,20 @@ a {
   font-size: 110%;
   color: #FCE373;
   position: static;
-
-
   /* POSITIONERING BUTTONS */
   position: relative;
-  margin: 0;
-  left: 20%;
-  padding-top: 0.5em;
-  padding-bottom: 0.5em;
-  padding-left: 3em;
-  padding-right: 3em;
+  display: block;
+  margin: 0 auto;
+  padding: 3% 3% 3% 3%;
+  /* button positionering zwart */
+  text-align: center;
+  margin-left: 20%;
+  margin-right: 10%;
+}
+
+svg {
+  height: 15px;
+  width: 15px
 }
 
 section {
@@ -116,7 +129,7 @@ section {
   margin-top: 17%;
 }
 
- section {
+section {
   margin: 0;
 }
 
@@ -126,9 +139,12 @@ section a {
   font-family: 'baron_neuebold', helvetica, Sans-Serif;
   font-size: 110%;
   color: #231f20;
-  margin-top: 3%;
+  margin-top: 0%;
+  /* positionering button geel */
+  margin-left: 10%;
+  margin-right: 20%;
+  text-align: center;
 }
-
 
 section figure figcaption {
   font-family: 'baron_neuebold', helvetica, Sans-Serif;
@@ -138,7 +154,6 @@ section figure figcaption {
   margin-top: -25%;
   margin-left: 0;
   margin-right: 0;
-
 }
 
 section ul {
@@ -149,8 +164,8 @@ section ul {
   list-style: none;
 }
 
-section ul li figure{
-  max-width:50%;
+section ul li figure {
+  width: 100%;
 }
 
 ul li figure img {
@@ -165,46 +180,69 @@ ul li figure img {
   border-bottom: 100px solid #9ad18b;
 }
 
+ul li button {
+  position: relative;
+  top: 80%;
+  background-color: #231f20;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+  z-index: 20;
+  width: 50px;
+  height: 40px;
+  margin-left: 0;
+  margin-right: 0;
+}
+
 /* SECTION VIDEO */
-section.video p {
-  background-image: url("images/video-top.jpg"), url("images/video-bottom.jpg");
-  background-repeat: no-repeat;
-  object-fit: cover;
+section.video img {
+  object-fit: contain;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 0
 }
 
 /* SECTION ORANJE */
-/* DIV VAN STACKOVERFLOW:https://stackoverflow.com/questions/50763880/using-flexbox-on-ul-next-to-eachother */
-article.hof {
-  display: block;
-}
-
-article.hal {
-  display: block;
-}
-
-section.oranje ul {
-  display: flex;
-  flex-direction: column;
-}
-
 section.oranje {
   margin: 0;
   background-color: #f37449;
 }
 
-section.oranje h2{
+section.oranje h2 {
   padding-top: 10%;
   padding-bottom: 5%;
 }
 
-section.oranje ul li {
+article.hof {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 50%;
+}
+
+article.hal {
+  display: block;
+  float: right;
+  margin: 0;
+  width: 50%;
+}
+
+section.oranje article ul {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+}
+
+section.oranje article ul li {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
 }
 
 section.oranje ul li img {
-  width: 50%;
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  max-width: 65%;
+  max-height: 65%;
   border: solid 7px #9ad18b;
   /*green*/
 }
@@ -213,22 +251,18 @@ address.address {
   font-family: helvetica, Sans-Serif;
   font-style: normal;
   display: inline-block;
-  text-align: center;
+  /* text-align: center;
   padding: 3% 0% 8% 0%;
   padding-right: 0%;
   padding-left: 8%;
   align-items: center;
-  margin: 0%;
+  margin: 0%; */
   color: #231f20;
-  /*black*/
 }
 
 section.oranje ul li a {
-  display: flex;
-  margin-right: 0;
   font-family: helvetica, Sans-Serif;
   color: #231f20;
-  /*black*/
   text-decoration: underline;
   background-color: transparent;
   padding: 0%;
@@ -245,12 +279,6 @@ section.oranje h3 {
   font-weight: bold;
   text-align: center;
   color: #231f20
-    /*black*/
-}
-
-section.oranje p {
-  font-size: 75%;
-  margin-left: 0;
 }
 
 section.oranje p {
@@ -259,11 +287,15 @@ section.oranje p {
   padding-right: 8%;
   padding-bottom: 10%;
   color: #231f20;
-  /*black*/
   margin-bottom: 0;
 }
 
 /* SECTION PAARS */
+section.paars {
+  margin: 0;
+  background-color: #a385bd;
+}
+
 section.paars a {
   font-family: helvetica, Sans-Serif;
   color: #231f20;
@@ -276,7 +308,6 @@ section.paars a {
 }
 
 /* Museum hightlights */
-
 section.paars a {
   font-size: 90%;
   display: flex;
@@ -287,123 +318,292 @@ section.paars a {
 /* BLOGS */
 section.paars {
   background-color: #a385bd;
-  padding-top: 10%;
-  margin-top: 0;
   margin: 0;
+  padding-top: 10%;
 }
 
-div.blogposts {
-  padding-top: 8%;
-  display: flex;
-}
-
-article.blog2 {
-  display: flex;
-  flex-direction: column;
+article.blog1 {
+  background-color: #a385bd;
+  display: block;
+  float: left;
+  margin: 0;
   width: 50%;
 }
 
-article h3 {
+article.blog2 {
+  background-color: #a385bd;
+  display: block;
+  float: right;
+  margin: 0;
+  width: 50%;
+}
+
+section.paars article ul {
+  display: flex;
+  flex-direction: column;
+  /* object-fit: contain;
+ max-width: 100%; */
+}
+
+section.paars article ul li {
+  display: flex;
+  object-fit: contain;
+  justify-content: center;
+}
+
+section.paars article h3 {
   font-family: helvetica, Sans-Serif;
   font-style: normal;
 }
 
-article.blog2 img {
-  width: 80%;
+section.paars article img {
   border: 7px solid #f89f4d;
-  object-fit: cover;
+  max-width: 90%;
+  margin-top: 5%;
 }
 
-section.paars article {
-  display: flex;
-  justify-content: center;
-}
-
-div.blogposts p {
+article p {
   font-size: 90%;
 }
 
 /* FOOTER */
+section footer {
+  margin-top: 200%;
+  margin-bottom: 100%;
+  background-color: #FCE373;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+footer form {
+  margin-left: 0;
+  margin-right: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
 input[type=text] {
+  padding-top: 5%;
   border: none;
   border-bottom: 2px solid black;
   background-color: #FCE373;
 }
 
 input[type=submit] {
-  background-color: rgba(191, 191, 191, 0.1);
+  margin-top: 5%;
+  margin-bottom: 5%;
   display: flex;
   justify-content: center;
+  border: none;
+  border-radius: 25px 25px 25px 25px;
+  background-color: #000000;
+  opacity: 25%;
+  padding: 3%;
+  font-size: 110%;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #FCE373;
 }
 
-footer h4 {
-  padding-top: 10%;
+section footer h4 {
   font-family: helvetica, Sans-Serif;
   font-weight: 100;
   font-size: 75%;
   text-align: center;
-  color: #231f20
-    /*black*/
+  color: #231f20;
+  /*black*/
+  margin-top: 25%;
 }
 
-footer h2 {
+section footer h2 {
   font-family: helvetica, Sans-Serif;
   font-weight: bold;
   font-size: 130%;
 }
 
+article.hof {
+  display: block;
+  float: left;
+  margin: 0;
+  width: 50%;
+}
+
+article.hal {
+  display: block;
+  float: right;
+  margin: 0;
+  width: 50%;
+}
+
+section footer article ul {
+  display: flex;
+  flex-direction: column;
+}
+
+section footer article ul li {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section footer article ul li a {
+  font-family: helvetica, Sans-Serif;
+  color: #231f20;
+  text-decoration: underline;
+  background-color: transparent;
+  padding: 0%;
+  position: static;
+}
+
+section footer ul li img {
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  max-width: 50%;
+  max-height: 50%;
+}
+
+footer ul.info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  border-top: 2px solid black;
+  background-color: transparent;
+}
+
+footer ul.info li {
+  z-index: 1;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+}
+
+/* NAV */
+nav {
+  margin: 0;
+  width: 100%;
+  height: 9%;
+  background-color: #231f20;
+  position: fixed;
+  bottom: 0;
+  color: #FCE373;
+  display: flex;
+}
+
+nav a {
+  display: flex;
+  margin: 0;
+  min-width: 20%;
+  align-self: center;
+}
+
+nav a svg {
+  position: relative;
+  left: 25%;
+  width: 40%;
+  height: auto;
+}
+
+nav button {
+  background-color: #cca69a;
+  border: 2px #231f20;
+  border-radius: 50px 50px 50px 50px;
+  width: 200%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+ul.menu {
+  display: none;
+  flex-direction: column;
+  position: fixed;
+  bottom: 7%;
+  z-index: 10;
+  width: 100%;
+}
+
+ul.open {
+  margin: 0;
+  max-width: 100%;
+  display: flex;
+  background-color: #cca69a;
+  z-index: 10;
+}
+
+ul.open li a {
+  margin: 5% 5% 5% 5%;
+  background-color: #cca69a;
+  color: #231f20;
+  font-size: 175%;
+  border-bottom: 2px solid #231f20;
+}
+
 /* MOOI PAGINA */
-
-body.paars header{
-  margin:0%;
-  background-color:#f89f4d;
-  padding-bottom:25%;
-}
-body.paars{
-background-color: #a385bd;
-
+body.paars header {
+  margin: 0 0 0 0;
+  background-color: #f89f4d;
+  padding-bottom: 55%;
 }
 
-body.paars h1{
-  line-height: 85%;
+body.paars {
+  background-color: #a385bd;
 }
 
-body.paars p{
+body.paars h1 {
+  margin-top: -35%;
+  line-height: 110%;
+}
+
+body.paars p {
   margin-left: 0;
   font-weight: lighter;
 }
 
-body.paars a{
-  background-color:#f89f4d;
-  color:#231f20;
+body.paars a {
+  background-color: #f89f4d;
+  color: #231f20;
   border-radius: 50px;
-
 }
 
+body.paars a svg {
+  height: 6%;
+  width: 7%;
+}
 
-body.paars figure img{
+body.paars figure img {
   max-width: 100%;
   margin-left: 0;
 }
 
-body.paars figcaption{
+body.paars figcaption {
   font-family: helvetica, Sans-Serif;
   text-align: center;
   font-size: 75%;
 }
-body.paars h2{
+
+body.paars h2 {
   padding-top: 10%;
   padding-bottom: 10%;
-    font-size: 120%;
+  font-size: 120%;
   font-family: helvetica, Sans-Serif;
   font-weight: bolder;
   text-align: center;
 }
 
-body.paars h3{
+body.paars h3 {
   padding-top: 10%;
   font-size: 110%;
-font-family: helvetica, Sans-Serif;
-font-weight: bolder;
-text-align: center;
+  font-family: helvetica, Sans-Serif;
+  font-weight: bolder;
+  text-align: center;
+}
+
+body.paars footer input[type=text]{
+
+  background-color: #a385bd;
 }
